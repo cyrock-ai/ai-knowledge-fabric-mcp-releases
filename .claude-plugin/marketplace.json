@@ -1,0 +1,12 @@
+{
+  "name": "cyrock-ai",
+  "description": "Plugins from CYROCK.AI for AI Knowledge Fabric",
+  "owner": { "name": "CYROCK.AI" },
+  "plugins": [
+    {
+      "name": "ai-knowledge-fabric",
+      "source": "./plugins/ai-knowledge-fabric",
+      "description": "Create and manage AI Knowledge Fabric topics, GraphRAG topics and agents by talking to Claude."
+    }
+  ]
+}
