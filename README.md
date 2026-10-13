@@ -24,7 +24,7 @@ connection.
 
 1. Download the extension for your computer:
    - [Windows](https://github.com/cyrock-ai/ai-knowledge-fabric-mcp-releases/releases/latest/download/ai-knowledge-fabric-mcp-win32-x64.mcpb)
-   - [macOS](https://github.com/cyrock-ai/ai-knowledge-fabric-mcp-releases/releases/latest/download/ai-knowledge-fabric-mcp-darwin-universal.mcpb) (Apple silicon and Intel)
+   - macOS: coming in a later release
    - [Linux](https://github.com/cyrock-ai/ai-knowledge-fabric-mcp-releases/releases/latest/download/ai-knowledge-fabric-mcp-linux-x64.mcpb)
 2. In Claude Desktop, open **Settings → Extensions**, drag the file onto the page and choose **Install**. Leave
    the instance address and token empty.
@@ -59,7 +59,7 @@ Download the program for your computer and put it in a folder where it can stay,
 `~/bin/`:
 
 - [Windows](https://github.com/cyrock-ai/ai-knowledge-fabric-mcp-releases/releases/latest/download/ai-knowledge-fabric-mcp-win32-x64.exe)
-- [macOS](https://github.com/cyrock-ai/ai-knowledge-fabric-mcp-releases/releases/latest/download/ai-knowledge-fabric-mcp-darwin-universal) (Apple silicon and Intel)
+- macOS: coming in a later release
 - [Linux](https://github.com/cyrock-ai/ai-knowledge-fabric-mcp-releases/releases/latest/download/ai-knowledge-fabric-mcp-linux-x64)
 
 On macOS and Linux, make it executable: `chmod +x ~/bin/ai-knowledge-fabric-mcp-*`.
