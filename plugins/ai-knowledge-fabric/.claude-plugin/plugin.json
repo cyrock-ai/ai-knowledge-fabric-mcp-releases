@@ -1,6 +1,6 @@
 {
   "name": "ai-knowledge-fabric",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Create and manage AI Knowledge Fabric topics, GraphRAG topics and agents by talking to Claude.",
   "author": { "name": "CYROCK.AI" },
   "homepage": "https://github.com/cyrock-ai/ai-knowledge-fabric-mcp-releases",

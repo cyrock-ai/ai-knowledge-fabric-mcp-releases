@@ -1,8 +1,8 @@
 # Changelog
 
-Each release works with the AI Knowledge Fabric versions of the same major (`0.x` with `0.x`).
+Each release works with the AI Knowledge Fabric versions of the same major (`1.x` with `1.x`).
 
-## 0.1.0 — 2026-10-13
+## 1.0.0 - 2026-10-14
 
 First release.
 
