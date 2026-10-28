@@ -1,7 +1,9 @@
 # AI Knowledge Fabric for Claude and other AI assistants
 
-Create and manage your AI Knowledge Fabric topics, GraphRAG topics and agents by talking to your AI assistant.
-This repository holds the downloads and the Claude plugin; you need nothing else.
+Create and manage your AI Knowledge Fabric topics, GraphRAG topics, agents and pipelines by talking to your AI
+assistant. It can also test how well a topic answers, and, for administrators, register the AI servers, Docling
+servers and databases the topics run on. This repository holds the downloads and the Claude plugin; you need
+nothing else.
 
 The assistant works with your own account and permissions, through your instance's Management REST API. It runs
 on your computer, so it reaches your instance wherever your browser does, including over VPN. It asks you before
@@ -11,7 +13,10 @@ every change.
 
 1. Your AI Knowledge Fabric account needs the **`API_ACCESS`** permission, plus the usual permissions for what
    you want to do (for example creating topics). The default `USER` role does not include `API_ACCESS`; ask an
-   administrator to grant it.
+   administrator to grant it. Two areas need permissions of their own:
+   - **Testing topics (evaluation):** `EVALUATION_VIEW` to see test sets and runs, `EVALUATION_RUN` to change
+     them, and `DEV_REPORTING` to start runs and see what happened for a question.
+   - **Registering servers and databases:** `SERVER_MANAGE`, the permission of the admin pages.
 2. Create a **personal access token** on your Profile page in AI Knowledge Fabric. It starts with `kfp_` and is
    shown only once; keep it at hand for step 2 below.
 
@@ -95,6 +100,17 @@ Ask for what you need, for example *"Create a GraphRAG topic for our product man
 the AI servers, models and databases your instance offers, asks you what it needs to know, and shows you every
 change before making it.
 
+More examples:
+
+- *"Build an agent that answers support questions from our manuals topic."* The assistant builds the pipeline,
+  creates the agent and assigns the pipeline to it.
+- *"Block questions about competitors in the sales topic."* The assistant sets up the topic's content rules
+  (guardrails).
+- *"Make a test set from these ten questions and run it against the manuals topic."* Then *"Why are the answers
+  weak?"* or *"Did raising the minimum score help?"*: the assistant reads the findings, explains a weak answer,
+  and compares two runs. It only suggests changes; it makes one only after you agree.
+- *"Register our Qdrant server at qdrant.internal."* (administrators): the assistant registers it and checks
+  that it answers. Enter passwords and API keys on the admin pages rather than in the chat.
 - *"Check the connection to AI Knowledge Fabric"* shows the instance, the version of this server and what your
   account may see.
 - To switch to another instance or replace an expired token, ask to connect again.
@@ -127,5 +143,6 @@ reads these environment variables. When they include a token, they win over a sa
 
 ## Versions
 
-Releases follow the major version of AI Knowledge Fabric: `0.x` works with AI Knowledge Fabric `0.x`. See
+Releases follow the major version of AI Knowledge Fabric: `1.x` works with AI Knowledge Fabric `1.x`. A tool
+that needs a newer instance than yours says so. See
 [CHANGELOG.md](CHANGELOG.md) for what changed, and [SECURITY.md](SECURITY.md) to report a security problem.

@@ -2,6 +2,16 @@
 
 Each release works with the AI Knowledge Fabric versions of the same major (`1.x` with `1.x`).
 
+## Unreleased
+
+- Pipelines: list, show, build, change module by module, and delete; the Pipeline Designer opens them as usual.
+- Content rules (guardrails) of RAG and GraphRAG topics: set and change them with the topic.
+- Evaluation: test sets and their questions, runs against a topic, results, findings, what happened for one
+  question, comparison of two runs, and analysis with suggested changes. Needs an instance with the evaluation API.
+- For administrators: register, change, check and remove AI servers, Docling servers, vector and graph
+  databases, and start or stop the servers the instance runs itself. Needs an instance with these API routes.
+- An overview at the start of a session, with what needs attention and suggested next steps.
+
 ## 1.0.0 - 2026-10-14
 
 First release.
