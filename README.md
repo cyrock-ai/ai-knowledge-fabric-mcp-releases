@@ -40,12 +40,7 @@ connection.
 
 ### Claude Code (Claude Desktop's Code tab, terminal, IDEs)
 
-1. In Claude Desktop, open **Customize → Plugins → Add → Add marketplace** and enter
-   `cyrock-ai/ai-knowledge-fabric-mcp-releases`.
-2. Install the **AI Knowledge Fabric** plugin. Turn on **Sync automatically** to receive new versions by
-   themselves.
-
-In a terminal instead:
+Run in a terminal:
 
 ```bash
 claude plugin marketplace add cyrock-ai/ai-knowledge-fabric-mcp-releases
@@ -53,6 +48,23 @@ claude plugin marketplace add cyrock-ai/ai-knowledge-fabric-mcp-releases
 
 ```bash
 claude plugin install ai-knowledge-fabric@cyrock-ai
+```
+
+Then quit Claude completely and open it again (see above). The plugin is then there in the terminal, in your
+IDE and in Claude Desktop's Code tab. These commands need Claude Code's command line (`claude`); if your
+terminal does not know it, [install it](https://code.claude.com/docs/en/setup) first.
+
+> **Not through Claude Desktop's "Add marketplace" button.** It currently refuses this plugin with "Marketplace
+> sync failed": it does not accept a plugin that brings its program as a download. Use the commands above.
+
+New versions:
+
+```bash
+claude plugin marketplace update cyrock-ai
+```
+
+```bash
+claude plugin update ai-knowledge-fabric@cyrock-ai
 ```
 
 If your organisation's administrator already made the plugin available or installed it for everyone, it is
@@ -120,6 +132,8 @@ More examples:
 | What happens | What to do |
 | --- | --- |
 | Claude says it has no AI Knowledge Fabric tools | Check that the extension or plugin is installed and switched on, then quit Claude completely and reopen it. In Claude Desktop's Code tab, use the plugin: the extension reaches Code sessions only some of the time. |
+| "Marketplace sync failed" in Claude Desktop | The **Add marketplace** button does not accept this plugin yet. Use the terminal commands under "Claude Code". |
+| The plugin has fewer tools than described here | An older copy of the marketplace is in use. Run the two commands under "New versions", then restart Claude. |
 | The connect page does not open | Claude shows the link in the chat; open it in your browser. The page only works on the computer the assistant runs on: over SSH, in WSL or in a container, see "Configuration" below. |
 | The page warns about an unencrypted address | Your address starts with `http://`. Use the `https://` address if your instance has one. |
 | "The bearer token is unknown, revoked or expired" | Create a new token on your Profile page and connect again. |
