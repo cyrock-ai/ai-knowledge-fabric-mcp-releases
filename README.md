@@ -2,8 +2,8 @@
 
 Create and manage your AI Knowledge Fabric topics, GraphRAG topics, agents and pipelines by talking to your AI
 assistant. It can also test how well a topic answers, and, for administrators, register the AI servers, Docling
-servers and databases the topics run on. This repository holds the downloads and the Claude plugin; you need
-nothing else.
+servers and databases the topics run on, and the other systems agents may act in as each user. This repository
+holds the downloads and the Claude plugin; you need nothing else.
 
 The assistant works with your own account and permissions, through your instance's Management REST API. It runs
 on your computer, so it reaches your instance wherever your browser does, including over VPN. It asks you before
@@ -16,7 +16,7 @@ every change.
    administrator to grant it. Two areas need permissions of their own:
    - **Testing topics (evaluation):** `EVALUATION_VIEW` to see test sets and runs, `EVALUATION_RUN` to change
      them, and `DEV_REPORTING` to start runs and see what happened for a question.
-   - **Registering servers and databases:** `SERVER_MANAGE`, the permission of the admin pages.
+   - **Registering servers, databases and tool providers:** `SERVER_MANAGE`, the permission of the admin pages.
 2. Create a **personal access token** on your Profile page in AI Knowledge Fabric. It starts with `kfp_` and is
    shown only once; keep it at hand for step 2 below.
 
@@ -123,6 +123,9 @@ More examples:
   and compares two runs. It only suggests changes; it makes one only after you agree.
 - *"Register our Qdrant server at qdrant.internal."* (administrators): the assistant registers it and checks
   that it answers. Enter passwords and API keys on the admin pages rather than in the chat.
+- *"Let the support agent create tickets in our ticket system as the user who asks."* (administrators): the
+  assistant registers the ticket system's MCP server as a tool provider and adds it to the agent's pipeline.
+  Enter the client secret on the admin page. Each user then connects their own account on their Profile page.
 - *"Check the connection to AI Knowledge Fabric"* shows the instance, the version of this server and what your
   account may see.
 - To switch to another instance or replace an expired token, ask to connect again.

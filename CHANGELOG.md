@@ -2,6 +2,17 @@
 
 Each release works with the AI Knowledge Fabric versions of the same major (`1.x` with `1.x`).
 
+## 1.3.0 - 2026-11-20
+
+- For administrators: tool providers, which are other systems' MCP servers (a ticket system, a CRM) where each
+  user signs in with their own account. You can list, find the sign-in details of, register, change and remove
+  them. Their client secrets are entered on the admin page, never in the chat. Needs an instance with tool
+  providers.
+- Pipelines: agents can use another system's MCP server as each user (Remote MCP Server module with user
+  sign-in). Before a pipeline uses one shared account for everyone, Claude asks whether that is intended. The
+  shared token is entered in the Pipeline Designer.
+- GraphRAG topics: set how many earlier messages a topic remembers and what it answers when it finds nothing.
+
 ## 1.2.0 - 2026-11-02
 
 - Pipelines: list, show, build, change module by module, and delete; the Pipeline Designer opens them as usual.

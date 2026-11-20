@@ -6,7 +6,7 @@
     {
       "name": "ai-knowledge-fabric",
       "source": "./plugins/ai-knowledge-fabric",
-      "description": "Create and manage AI Knowledge Fabric topics, GraphRAG topics and agents by talking to Claude."
+      "description": "Create and manage AI Knowledge Fabric topics, GraphRAG topics, agents and infrastructure by talking to Claude."
     }
   ]
 }
