@@ -2,6 +2,14 @@
 
 Each release works with the AI Knowledge Fabric versions of the same major (`1.x` with `1.x`).
 
+## 1.4.0 - 2026-11-27
+
+- Pipeline names may now contain digits and hyphens (`-`), for example `Report-2026`. A name must still start
+  with a letter or `_`.
+- For administrators: the address of an Anthropic (Cloud), OpenAI (Cloud) or Google Gemini (Cloud) server is
+  fixed. For any other address, for example a gateway or another cloud vendor, Claude registers the server as
+  OpenAI API (self-hosted).
+
 ## 1.3.0 - 2026-11-20
 
 - For administrators: tool providers, which are other systems' MCP servers (a ticket system, a CRM) where each
